@@ -1,5 +1,5 @@
 # Dasar Pemrograman
-This repo is intended for ITB Students who want to learn the procedural and functional paradigm.
+This repository is designed for ITB students who are interested in gaining knowledge about procedural and functional programming paradigms.
 
 ## Setup
 1. Install Haskell from this [link](https://www.haskell.org/ghcup/) using ghcup.
