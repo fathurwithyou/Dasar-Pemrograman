@@ -1,5 +1,4 @@
 module SelectionSort where
-import Debugging (debug, printList)
 
 takeNth :: Int -> [Int] -> Int
 takeNth n li
