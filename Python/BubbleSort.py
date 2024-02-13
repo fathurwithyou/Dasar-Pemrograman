@@ -1,9 +1,9 @@
-arr = [5, 6, 10, 10, 4, 9, 6, 4, 7, 2]
-n = len(arr)
+from typing import List
 
-print(f"Before: {arr}")
-for i in range(n):
-  for j in range(n-i-1):
-      if arr[j] > arr[j+1]:
-          arr[j+1], arr[j] = arr[j], arr[j+1]
-print(f"After: {arr}")
+
+def bubble_sort(arr: List[int], n: int) -> List[int]:
+    for i in range(n):
+        for j in range(n-i-1):
+            if arr[j] > arr[j+1]:
+                arr[j+1], arr[j] = arr[j], arr[j+1]
+    return arr
