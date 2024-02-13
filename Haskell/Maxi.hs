@@ -1,6 +1,6 @@
 module Maxi where
 
-mainMaxi:: Int -> [Int] -> Int
+mainMaxi :: Int -> [Int] -> Int
 mainMaxi x li
   | null li = x
   | head li > x = mainMaxi (head li) (tail li)

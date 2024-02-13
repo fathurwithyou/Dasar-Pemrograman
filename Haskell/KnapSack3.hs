@@ -16,10 +16,10 @@ knapSack n w val wt st
   | takeNth n wt > w = knapSack (n - 1) w val wt st
   | takeNth n st == 1 = maxi ambilLanjut lanjut
   | otherwise = maxi ambilLanjut (maxi lanjut ambilTerus)
-  where 
+  where
     ambilLanjut = takeNth n val + knapSack (n - 1) (w - takeNth n wt) val wt st
     lanjut = knapSack (n - 1) w val wt st
     ambilTerus = takeNth n val + knapSack n (w - takeNth n wt) val wt st
-     
+
 knapSack3 :: Int -> Int -> [Int] -> [Int] -> [Int] -> Int
-knapSack3 n = knapSack (n-1)
+knapSack3 n = knapSack (n - 1)

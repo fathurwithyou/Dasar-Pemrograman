@@ -1,6 +1,6 @@
 module IsJamValid where
 
--- APAKAH JAM VALID? 
+-- APAKAH JAM VALID?
 -- DEFINISI DAN SPESIFIKASI
 isJamValid :: Int -> Int -> Int -> Bool
 {- IsJamValid(j,m,d) menghasilkan nilai true jika j, m, d menyusun jam
