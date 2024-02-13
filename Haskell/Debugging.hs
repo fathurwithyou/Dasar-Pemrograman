@@ -1,10 +1,14 @@
 module Debugging where
 
-import Debug.Trace ( trace )
-import Text.Printf ( printf )
+import Debug.Trace (trace)
+import Text.Printf (PrintfType, printf)
+import Text.Printf qualified as TP (PrintfType, printf)
 
-debug :: c -> String -> c
-debug = flip trace
+debug :: (Show a) => a -> String -> a
+debug expr message = trace ("\n" ++ message ++ " - " ++ show expr) expr
 
 printList :: [Int] -> String
-printList lst = printf "[%s]" (unwords (map show lst))
+printList lst = TP.printf "[%s]" (unwords (map show lst))
+
+printf :: (PrintfType r) => String -> r
+printf = TP.printf

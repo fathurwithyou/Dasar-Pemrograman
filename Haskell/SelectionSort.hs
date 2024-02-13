@@ -2,7 +2,6 @@ module SelectionSort where
 
 takeNth :: Int -> [Int] -> Int
 takeNth n li
-  | null li = 999
   | n == 0 = head li
   | otherwise = takeNth (n - 1) (tail li)
 
