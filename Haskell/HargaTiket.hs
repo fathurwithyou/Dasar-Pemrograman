@@ -6,6 +6,5 @@ minTiket n
   | (n >= 7 && n <= 18) = 5000
   | otherwise = 10000
 
-
 hargaTiket :: Int -> Int -> Int
 hargaTiket a b = minTiket a + minTiket b
