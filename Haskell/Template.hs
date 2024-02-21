@@ -55,5 +55,5 @@ isOneElmt l = (length l) == 1
 
 -- APLIKASI
 {-
-
 -}
+
