@@ -1,8 +1,13 @@
--- isEqual :: [Int] -> [Int] -> Bool
--- -- Dari depan
 
-store :: Int -> Int
-store n = n
+-- DoubleFactorial - doubleFactorial n
+module DoubleFactorial where
 
-maxi :: [Int] -> Int
-maxi li = maximum li
+-- Definisi dan spesifikasi
+doubleFactorial :: Int -> Int
+
+-- Realisasi
+doubleFactorial n 
+ | n == 0 || n == 1 = 1
+ | n < 0 = error "Undefined for negative input."
+ | otherwise = n * doubleFactorial (n-2)
+

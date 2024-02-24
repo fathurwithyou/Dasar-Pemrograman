@@ -15,7 +15,7 @@ knapSack n w val wt st
   | n == -1 || w == 0 = 0
   | takeNth n wt > w = knapSack (n - 1) w val wt st
   | takeNth n st == 1 = maxi ambilLanjut lanjut
-  | otherwise = maxi ambilLanjut (maxi lanjut ambilTerus)
+  | otherwise = maxi lanjut ambilTerus
   where
     ambilLanjut = takeNth n val + knapSack (n - 1) (w - takeNth n wt) val wt st
     lanjut = knapSack (n - 1) w val wt st
