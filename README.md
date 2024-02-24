@@ -1,6 +1,6 @@
 # Dasar Pemrograman
-[![python](https://img.shields.io/badge/Python-3.9-3776AB.svg?style=flat&logo=python&logoColor=white)](https://www.python.org) ![Static Badge](https://img.shields.io/badge/Haskell-9.4.3-blue?logo=haskell)
 
+[![python](https://img.shields.io/badge/Python-3.9-3776AB.svg?style=flat&logo=python&logoColor=white)](https://www.python.org) ![Static Badge](https://img.shields.io/badge/Haskell-9.4.3-blue?logo=haskell)
 
 This repository is designed for ITB students who are interested in gaining knowledge about procedural and functional programming paradigms.
 
@@ -16,3 +16,9 @@ This repository is designed for ITB students who are interested in gaining knowl
 
 ### Windows (Chocolatey)
 
+1. Firstly, install [Chocolatey](https://chocolatey.org/install) as admin in Powershell.
+2. Rerun the administrative Powershell.
+3. Run `choco install haskell-dev`.
+4. Use default installation (click enter until no option)
+5. Wait for a moment.
+6. If finished, try to run `ghci -V`.
