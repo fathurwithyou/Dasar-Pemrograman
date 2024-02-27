@@ -7,4 +7,4 @@ getSum li
 
 prefixSum :: [Int] -> [Int]
 prefixSum [] = []
-prefixSum li = prefixSum (init li) ++ [last li + getSum (init li)] 
+prefixSum li = prefixSum (init li) ++ [getSum li] 

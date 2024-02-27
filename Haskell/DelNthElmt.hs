@@ -1,14 +1,13 @@
 module DelNthElmt where
-import Debugging ( debug, printf )
 
 
-delNthElmt :: Int -> [Int] -> [Int]
+delNthElmt :: Int -> [Char] -> [Char]
+
+{- delNthElmt(n,l) menghilangkan elemen ke-n dari l
+   Asumsi: n adalah integer positif dan lebih kecil atau sama dengan jumlah elemen l tidak kosong. -}
 delNthElmt n l
   | null l = [] 
-  | n == 0 = tail l
+  | n == 1 = tail l
   | otherwise = [head l] ++ delNthElmt (n-1) (tail l) 
 
--- remove :: Int -> [Char] -> [Char]
--- remove _ [] = []
--- remove 0 (x:xs) = xs
--- remove n (x:xs) = x : remove (n-1) (xs)
+

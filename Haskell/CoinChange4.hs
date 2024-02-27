@@ -6,15 +6,8 @@ coinChange n val res
   | null val || n < 0 = []
   | otherwise = ambilTerus ++ lanjut
   where
-    ambilTerus = coinChange (n - head val) val (addHeadToAll (head val) res)
+    ambilTerus = coinChange (n - head val) val ([head res ++ [head val]])
     lanjut = coinChange n (tail val) res
-
-addHeadToAll :: Int -> [[Int]] -> [[Int]]
-addHeadToAll _ [] = []
-addHeadToAll x yss = [head yss ++ [x]] ++ addHeadToAll x (tail yss)
 
 coinChange4 :: Int -> [Int] -> [[Int]]
 coinChange4 n val = coinChange n val [[]]
-
-
-
