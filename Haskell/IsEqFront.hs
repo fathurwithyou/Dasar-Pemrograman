@@ -11,4 +11,4 @@ isEqFront t1 t2
   | otherwise = isEqFront (tail t1) (tail t2)
 
 --APLIKASI
---isEqFront  [’a’, ’b’, ’c’]  [’a’, ’b’, ’c’, 'd', 'e']
+--isEqFront  ['a', 'b', 'c']  ['a', 'b', 'c', 'd', 'e'] 

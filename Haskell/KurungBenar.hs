@@ -11,7 +11,7 @@ stacked li st
 		 else False
   | head li == ']' =
 	  if last st == '['
-	     then stacked (tail li) (init st)
+		 then stacked (tail li) (init st)
 		 else False
   | otherwise =
 	  if last st == '{'
@@ -21,7 +21,7 @@ stacked li st
 kurungBenar :: [Char] -> Bool
 kurungBenar li = stacked li []
 
--- isValid ['(',')']
--- isValid ['(',')','[',']','{','}']
--- isValid ['(',']']
--- isValid ['(','[',')',']']
+-- kurungBenar ['(',')']
+-- kurungBenar ['(',')','[',']','{','}']
+-- kurungBenar ['(',']']
+-- kurungBenar ['(','[',')',']']
