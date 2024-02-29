@@ -4,7 +4,7 @@
 
 This repository is designed for ITB students who are interested in gaining knowledge about procedural and functional programming paradigms.
 
-## Installation
+## Haskell Installation
 
 ### Windows (GHCup)
 
@@ -22,3 +22,6 @@ This repository is designed for ITB students who are interested in gaining knowl
 4. Use default installation (click enter until no option)
 5. Wait for a moment.
 6. If finished, try to run `ghci -V`.
+
+## Contributor
+Muhammad Fathur Rizky [19623149]

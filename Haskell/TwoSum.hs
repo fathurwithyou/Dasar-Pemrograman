@@ -1,11 +1,11 @@
 module TwoSum where
 
-exist :: [Int] -> Int -> Bool
-exist a b
+isExist :: [Int] -> Int -> Bool
+isExist a b
   | null a = False
-  | otherwise = (head a == b) || exist (tail a) b
+  | otherwise = (head a == b) || isExist (tail a) b
 
 twoSum :: [Int] -> Int -> Bool
 twoSum a b
   | null a = False
-  | otherwise = exist (tail a) (b - (head a)) || twoSum (tail a) b
+  | otherwise = isExist (tail a) (b - (head a)) || twoSum (tail a) b
