@@ -18,15 +18,15 @@ subtraction a b
   | isMember (head a) b = subtraction (tail a) b
   | otherwise = [head a] ++ subtraction (tail a) b
 
-union :: [Int] -> [Int] -> [Int]
-union a b
+uni :: [Int] -> [Int] -> [Int]
+uni a b
  | null b = a
- | isMember (head b) a = union a (tail b)
- | otherwise = union(a ++ [head b]) (tail b)
+ | isMember (head b) a = uni a (tail b)
+ | otherwise = uni (a ++ [head b]) (tail b)
 
 setOperation :: [Int] -> [Int] -> Char -> [Int]
 setOperation a b c
- | c == 'U' = union a b
+ | c == 'U' = uni a b
  | c == 'I' = intersection a b []
  | otherwise = subtraction a b
 

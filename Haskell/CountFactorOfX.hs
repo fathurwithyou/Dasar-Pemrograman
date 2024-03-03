@@ -1,8 +1,8 @@
 module CountFactorOfX where
 
 countFactorOfX :: Int -> [Int] -> Int
-{- countFactorOfX n l mengembalikan banyaknya kemunculan ​bilangan yang merupakan faktor dari n pada l -
-countFactorOfX n l-}
+{- countFactorOfX n l mengembalikan banyaknya kemunculan ​bilangan yang merupakan faktor dari n pada l -}
+countFactorOfX n l
   | null l = 0
   | head l == 0 = countFactorOfX n (tail l)
   | otherwise =
