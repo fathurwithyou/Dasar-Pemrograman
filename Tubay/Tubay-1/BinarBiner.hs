@@ -1,6 +1,3 @@
-
-
-
 module BinarBiner where
 
 binarBiner :: Int -> Int 
