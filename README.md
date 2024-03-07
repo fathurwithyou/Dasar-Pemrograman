@@ -2,7 +2,7 @@
 
 [![python](https://img.shields.io/badge/Python-3.9-3776AB.svg?style=flat&logo=python&logoColor=white)](https://www.python.org) ![Static Badge](https://img.shields.io/badge/Haskell-9.8.1-blue?logo=haskell)
 
-This repository is designed for ITB students who are interested in gaining knowledge about procedural and functional programming paradigms.
+This repository is designed for ITB students who are interested in gaining knowledge about procedural (Python) and functional (Haskell) programming paradigms. 
 
 ## Haskell Installation
 
