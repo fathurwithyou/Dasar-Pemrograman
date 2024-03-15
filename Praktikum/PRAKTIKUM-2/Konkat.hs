@@ -1,4 +1,4 @@
-module ListOfCharacter where
+module Konkat where
 
 konkat :: [Char] -> [Char] -> [Char]
 konkat li lc = li++lc

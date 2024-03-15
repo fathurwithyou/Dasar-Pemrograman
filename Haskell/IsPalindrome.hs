@@ -1,6 +1,6 @@
 module IsPalindrome where
 
-isPalindrome :: [Int] -> Bool
+isPalindrome :: [Char] -> Bool
 isPalindrome li
   | length li <= 1 = True
   | head li /= last li = False

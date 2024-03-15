@@ -1,4 +1,4 @@
-module ListOfInteger where
+module PecahListGanjilGenap where
 
 ganjil :: [Int] -> [Int]
 ganjil li
