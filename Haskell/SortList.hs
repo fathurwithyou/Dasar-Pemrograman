@@ -1,12 +1,9 @@
 module SortList where
 
-insert :: Int -> [Int] -> [Int]
-insert x li 
- | null li = [x]
- | x <= head li = [x] ++ li
- | otherwise = [head li] ++ insert x (tail li)
-
 sortList :: [Int] -> [Int]
 sortList li 
- | null li = []
- | otherwise = insert (head li) (sortList (tail li))
+  | length li == 1 = [head li]
+  | head li < head right = [head li] ++ right
+  | otherwise = [head right] ++ sortList ([head li] ++ tail right)
+  where
+	  right = sortList(tail li)
