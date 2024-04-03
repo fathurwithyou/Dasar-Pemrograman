@@ -4,7 +4,7 @@
 
 This repository is designed for ITB students who are interested in gaining knowledge about procedural (Python) and functional (Haskell) programming paradigms. 
 
-## Haskell wwInstallation
+## Haskell Installation
 
 ### Windows (GHCup)
 
