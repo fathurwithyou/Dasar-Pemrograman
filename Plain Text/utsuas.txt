@@ -1,0 +1,28 @@
+Program mencetak rata-rata dari 2 pelajaran
+{ membaca nilai UTS dan nilai UAS mahasiswa untuk setiap pelajaran yang diikutinya (0..100) dan diakhiri jika nilai masukan UTS di luar range nilai yang diizinkan }
+KAMUS
+ uts, uas, rerata, NA: real
+ cnt : integer
+ALGORITMA
+cnt <- 0
+rerata <- 0
+uts <- 0
+while (uts >= 0 and uts <= 100) do
+ uas <- -1
+ output("Nilai UTS = ")
+ input(uts)
+ if (uts >= 0 and uts <= 100) then
+  while (uas < 0 or uas > 100) do
+   output("Nilai UAS = ")
+   input(uas)
+   if (uas < 0 or uas > 100) then
+    output("Ulangi input nilai (0..100)!")
+  NA <- 0.4*uts + 0.6*uas
+  cnt <- cnt + 1
+  rerata <- rerata + NA
+  output("Nilai akhir pelajaran", cnt," = ", NA)
+
+if (cnt == 0) then
+ output("Data kosong, tidak ada nilai rata-rata !")
+else
+ output("Nilai rata-rata dari ", cnt ," pelajaran adalah = ", rerata/cnt)

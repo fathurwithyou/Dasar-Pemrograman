@@ -1,0 +1,20 @@
+Program menghitung nilai rata-rata UTS
+{Membaca nilai UTS yang valid 0 ≤ n ≤ 100, pembacaan dihentikan jika dimasukkan nilai di luar range}
+
+KAMUS
+ rata, n : real
+ found : boolean
+
+ALGORITMA
+cnt <- 0
+n <- 0
+rata <- 0
+while (n ≥ 0 and n ≤ 100) do
+ input(n) 
+ if (n ≥ 0 and n ≤ 100) then
+  cnt <- cnt + 1
+  rata <- rata + n
+if (cnt > 0) then
+ output(rata/cnt)
+else 
+ output("Tidak ada data")

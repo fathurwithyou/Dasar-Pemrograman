@@ -13,7 +13,7 @@ def findNear(n, x, arr):
             ans = arr[i]
             mini = abs(arr[i]-x)
     return ans
-  
+
 
 def findLong(n, x, arr):
     ans = arr[0]

@@ -1,0 +1,22 @@
+Program membentuk data type jam
+{Membaca h,m,s sampai memenuhi dan men-assign jika sudah memenuhi}
+KAMUS
+
+ type jam : <HH: integer[0..23]; {bagian jam}
+              MM : integer[0..59]; {bagian menit}
+              SS: integer[0..59]> {bagian detik}
+ J : jam
+ h, m, s: integer
+ALGORITMA
+break <- false
+while (not break) do
+ input(h)
+ input(m)
+ input(s)
+ if (0 ≥ h and h ≤ 23 and 0 ≤ m and m ≤ 59 and 0 ≤ s and s ≤ 59) then
+  J.HH ← h
+  J.MM ← m
+  J.SS ← s
+  break <- true
+ else
+  output("Tidak dapat membentuk jam")

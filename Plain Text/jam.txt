@@ -1,0 +1,19 @@
+Program membentuk data type jam
+{menerima 3 buah bilangan integer yaitu h, m, dan s yang akan digunakan untuk membentuk data bertype jam}
+KAMUS
+ type jam : <HH: integer[0..23]; {bagian jam}
+              MM : integer[0..59]; {bagian menit}
+              SS: integer[0..59]> {bagian detik}
+ J : jam
+ h, m, s: integer
+ALGORITMA
+input(h)
+input(m)
+input(s)
+
+if (0 ≥ h and h ≤ 23 and 0 ≤ m and m ≤ 59 and 0 ≤ s and s ≤ 59) then
+ J.HH <- h
+ J.MM <- m
+ J.SS <- s
+else 
+ output("Tidak dapat membentuk jam")
