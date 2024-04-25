@@ -1,0 +1,43 @@
+Program membandingkan nilai luas S1 dan S2
+{Sebuah program menerima masukan 2 buah SegiEmpat, program akan membandingkan nilai luas S1 dan S2}
+KAMUS
+ type Titik : <x: integer; {absis}
+               y: integer; {ordinat}>
+ TAwal, TAkhir: Titik
+ S1, S2: integer
+ALGORITMA
+break <- false
+S1 <- 0
+S2 <- 0
+while (not break) do
+ input(a, b)
+ input(c, d)
+ if(a*c < 0 and b*d < 0) then
+  break <- true
+  TAwal.x <- a
+  TAwal.y <- b
+  TAkhir.x <- c
+  TAkhir.y <- d
+  S1 = (TAwal.x-TAkhir.x)*(TAwal.y-TAkhir.y)
+  if (S1 < 0) then
+    S1 <- S1 * (-1)
+
+while (not break) do
+ input(a, b)
+ input(c, d)
+ if(a*c < 0 and b*d < 0) then
+  break <- true
+  TAwal.x <- a
+  TAwal.y <- b
+  TAkhir.x <- c
+  TAkhir.y <- d
+  S2 = (TAwal.x-TAkhir.x)*(TAwal.y-TAkhir.y)
+  if (S2 < 0) then
+    S2 <- S2 * (-1)
+
+if (S1 > S2) then
+ output("SegiEmpat pertama lebih luas daripada SegiEmpat kedua")
+else if (S1 < S2) then
+ output("SegiEmpat kedua lebih luas daripada SegiEmpat pertama")
+else
+ output("Luas SegiEmpat sama")
