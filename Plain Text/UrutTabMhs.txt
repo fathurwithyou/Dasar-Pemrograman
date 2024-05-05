@@ -1,0 +1,17 @@
+A.
+
+procedure UrutTabMhs (input/output TMhs : TabMhs)
+    N <- TMhs.Neff
+    if (N > 1) then
+        i traversal [1..N-1]
+            maxi <- i
+            j traversal [i+1..N]
+                if (TMhs.TM[j].Nilai > TMhs.TM[maxi].Nilai)
+                    maxi <- j
+            tmp <- TMhs.TM[maxi].Nilai
+            TMhs.TM[maxi].Nilai <- TMhs.TM[i].Nilai
+            TMhs.TM[i].Nilai <- tmp
+
+B.
+
+Bisa, kita sudah tahu nilai minimum dan maksimum dari Nilai ada pada rentang [0,100] sehingga kita bisa membuat array of frequency sepanjang itu. Definisikan newArr sebagai array of integer sepanjang Neff, kita bisa isi array tersebut setelah kita melakukan counting pada array TM, kemudian kita lakukan traversing dari 0 sampai 100 untuk mengisi Neff.

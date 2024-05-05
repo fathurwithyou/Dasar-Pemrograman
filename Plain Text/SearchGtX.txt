@@ -1,0 +1,18 @@
+Program membentuk data type jam
+{menerima masukan sebuah TabSuhu misalnya T yang mungkin kosong (Neff = 0) dan 
+sebuah nilai suhu misalnya X dan menghasilkan true jika ada data di T 
+yang bernilai > X (false jika tidak)}
+
+KAMUS
+    constant NMax : integer = 366
+    type TabSuhu : < Tab : array [1..NMax] of real;
+                     Neff : integer >
+
+ALGORITMA
+function searchGtX (T: TabSuhu) -> boolean
+    i <- 0
+    while (i <= T.Neff) do
+        if (T.Tab[i] > X) then
+            return true
+        i <- i + 1
+    return false

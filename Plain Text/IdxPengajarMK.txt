@@ -1,0 +1,8 @@
+function IdxPengajarMK (P : string, T : TabMatKul) -> integer
+    idx <- 0
+    if (T.NELMT = 0) then 
+        return idx
+    i traversal [1..T.NELMT]
+        if (T.TM[i].NamaMK = P) then
+            idx <- i
+    return idx
