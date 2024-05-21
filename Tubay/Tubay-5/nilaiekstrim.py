@@ -1,5 +1,5 @@
 def findMax(n: int, arr: list) -> int:
-    maxi = arr[0]
+    maxi: int = arr[0]
     for i in range(1, n):
         if arr[i] > maxi:
             maxi = arr[i]
@@ -7,7 +7,7 @@ def findMax(n: int, arr: list) -> int:
 
 
 def findMin(n: int, arr: list) -> int:
-    mini = arr[0]
+    mini: int = arr[0]
     for i in range(1, n):
         if arr[i] < mini:
             mini = arr[i]
@@ -22,11 +22,11 @@ def isExist(n: int, arr: list, x: int) -> int:
 
 
 # input
-n = int(input())
-arr = [0 for _ in range(n)]
+n: int = int(input())
+arr: list = [0 for _ in range(n)]
 for i in range(n):
     arr[i] = int(input())
-x = int(input())
+x: int = int(input())
 
 if isExist(n, arr, x):
     maxi = findMax(n, arr)
