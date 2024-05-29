@@ -1,8 +1,8 @@
-n: int = int(input())
-a: list = list(map(int, input().strip().split()))
+n = int(input())
+a = list(map(int, input().strip().split()))
 
-cnt: int = 0
-pos: int = 0
+cnt = 0
+pos = 0
 for i in range(1, n):
   if a[i] > a[pos]:
     pos = i
